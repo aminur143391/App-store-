@@ -1,1 +1,197 @@
-https://aminur143391.github.io/Aminur/Privacy.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My App Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #ff4b91, #ff77b4);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      letter-spacing: 1px;
+    }
+
+    /* Search bar */
+    .search-bar {
+      padding: 10px;
+      text-align: center;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .search-bar input {
+      width: 80%;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 2px solid #ff4b91;
+      border-radius: 25px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .search-bar input:focus {
+      border-color: #ff77b4;
+      box-shadow: 0 0 8px rgba(255, 75, 145, 0.4);
+    }
+
+    /* App grid */
+    .app-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px;
+      gap: 15px;
+    }
+
+    /* App card */
+    .app {
+      background: white;
+      width: 140px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .app:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .app img {
+      width: 80px;
+      height: 80px;
+      margin-top: 12px;
+      border-radius: 18px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .app h3 {
+      font-size: 15px;
+      margin: 10px 0 5px;
+      padding: 0 5px;
+      color: #333;
+      min-height: 40px;
+    }
+
+    /* Download button */
+    .app a {
+      display: block;
+      background: linear-gradient(to right, #ff4b91, #ff77b4);
+      color: white;
+      padding: 7px 0;
+      border-radius: 0 0 15px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .app a:hover {
+      background: linear-gradient(to right, #ff2a7a, #ff66a3);
+    }
+
+    /* Responsive */
+    @media(max-width: 500px) {
+      .app {
+        width: 45%;
+      }
+      .search-bar input {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>📱 My App Store</header>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="🔍 Search apps..." onkeyup="searchApps()">
+  </div>
+
+  <div class="app-list" id="appList">
+    <!-- App Items -->
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/yt9w_Lv_fWk6wDflX4h5ZK7P0WQ-5Uw1lxqJxD0Rj9yBe6q-9vKQK0i9A4hJf7YoUQ=s72" alt="Facebook">
+      <h3>Facebook</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.facebook.katana" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/j8UNS4-T1kB0Yy-sAEOsvB7vDpgkDQGqTndRMjqrXyXNrMn7tt0Xc63iorGGFSYH8q8=s72" alt="Free Fire Max">
+      <h3>Free Fire Max</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/8U8PvAXPsOas4BokOQzS9kYq2kDjmapN4l_KCOYQy39CzGtlefxdHBLsHuZ0Vd0hG6A=s72" alt="PhonePe">
+      <h3>PhonePe</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.phonepe.app" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/fkQW0G0FU2ILUWgM_KL-qpUKk5zGeGCQXOJ94nVddqknS4uYNFe2og4On9vM0fwTP-w=s72" alt="PayPal">
+      <h3>PayPal</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/bDbBjAj_JMFr5y6nnCxGw6JyPaz0ta2PHpmf8InlD877vzMb7jTgOJq_5VO3R3OqDM=s72" alt="Zupee">
+      <h3>Zupee</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.zupee.free" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/FJVPjvQWxN8L1tG12ENeo_-PswVdYxMOZ5xQwBrBFLNt-kr4csyEujj_rgF7BSvtB9k=s72" alt="Subway Surfers">
+      <h3>Subway Surfers</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/EZYinyaH0kqEiSg0o2gK4JuK7pZ5T13OIhD2psF1BLnFZcFJdfJBOiYn1v45hfFR5yo=s72" alt="Candy Crush Saga">
+      <h3>Candy Crush Saga</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.king.candycrushsaga" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/5AOKZJrEq9Ik8BAHTAkc8dZv9iU-enter81F5wJVjaE9zreZ0PEdsMlGg3_RK4QVy9Sj=s72" alt="Temple Run 2">
+      <h3>Temple Run 2</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.imangi.templerun2" target="_blank">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/JgdjZqeJ3OPyakt2WbZpkrib1iCOd6j0ZohlOXVI-UCuK8JpYm0b0j8YZ2dkywU2wQ=s72" alt="Call of Duty">
+      <h3>Call of Duty</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" target="_blank">Download</a>
+    </div>
+  </div>
+
+  <script>
+    function searchApps() {
+      const q = document.getElementById('search').value.toLowerCase();
+      document.querySelectorAll('.app').forEach(app => {
+        const name = app.querySelector('h3').innerText.toLowerCase();
+        app.style.display = name.includes(q) ? 'inline-block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
